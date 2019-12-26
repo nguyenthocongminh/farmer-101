@@ -4,10 +4,23 @@ WORKDIR /app
 
 COPY . /app
 
-RUN apt-get update && apt-get install -y build-essential cmake git pkg-config libgtk-3-dev \
-libavcodec-dev libavformat-dev libswscale-dev libv4l-dev \
-libxvidcore-dev libx264-dev libjpeg-dev libpng-dev libtiff-dev \
-gfortran openexr -y
+RUN apt-get update && apt-get install -y build-essential \
+    cmake \
+    git \
+    pkg-config \
+    libgtk-3-dev \
+    wget \
+    libavcodec-dev \
+    libavformat-dev \
+    libswscale-dev \
+    libv4l-dev \
+    libxvidcore-dev \
+    libx264-dev \
+    libjpeg-dev \
+    libpng-dev \
+    libtiff-dev \
+    gfortran \
+    openexr
 
 RUN mkdir /tmp/opencv_build &&\
 cd /tmp/opencv_build &&\
