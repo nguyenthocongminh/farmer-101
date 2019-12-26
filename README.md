@@ -8,7 +8,8 @@ Hướng dẫn để lưu project về máy và chạy trên máy local cho mụ
 
 ### Yêu cầu
 
-- Python3 ( Project này dùng python 3.7.6)
+- Windows 10
+- Python3 (Cụ thể là repo sử dụng python 3.7.6)
 - pip
 ```
 Link tải Python 3.7.6 (đã có pip): https://www.python.org/downloads/release/python-376/
