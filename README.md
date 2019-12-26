@@ -18,11 +18,9 @@ Link tải Python 3.7.6 (đã có pip): https://www.python.org/downloads/release
 ```
 Link tải git: https://git-scm.com/downloads
 ```
-
 - Docker (tuỳ chọn)
 ```
 Link tải docker for Windows: https://docs.docker.com/docker-for-windows/install/
-
 ```
 
 
@@ -68,5 +66,5 @@ docker run -it -p 5000:5000 farmer-101
 * **Huỳnh Minh Dũng** - [cd2012hn](https://github.com/cd2012hn)
 
 ## Lời cảm ơn
-* Cô Đỗ Thị Thu Hà, giáo viên môn Xử lý ảnh đã dạy chúng em những kiến thức cần thiết để thực hiện project này
-* Anh Phạm Văn Thanh, sinh viên K60 đã hỗ trợ chúng em trong quá trình thực hiện project
+* Cô Đỗ Thanh Hà, giáo viên môn Xử lý ảnh đã dạy chúng em những kiến thức cần thiết để thực hiện project này
+* Anh Phạm Văn Thanh - [thanhphamvan](https://github.com/thanhphamvan) đã hỗ trợ chúng em deploy web bằng docker
