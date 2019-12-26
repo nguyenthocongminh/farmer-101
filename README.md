@@ -10,19 +10,34 @@ Hướng dẫn để lưu project về máy và chạy trên máy local cho mụ
 
 - Python3 ( Project này dùng python 3.7.6)
 - pip
-
+```
+Link tải Python 3.7.6 (đã có pip): https://www.python.org/downloads/release/python-376/
+```
+- Git (tuỳ chọn)
+```
+Link tải git: https://git-scm.com/downloads
 ```
 
-```
+
 
 ### Cài đặt
 
-Bước 1: Cài đặt các package cần thiết cho repo bằng pip (các package đã có trong requirements.txt)
+Bước 1: Lưu repo về máy
+* Nếu dùng git:
+```
+git clone https://github.com/nguyenthocongminh/farmer-101.git
+```
+* Nếu không dùng, tải link zip của repo:
+```
+https://codeload.github.com/nguyenthocongminh/farmer-101/zip/master
+```
+
+Bước 2: Cài đặt các package cần thiết cho repo bằng pip (các package đã có trong requirements.txt)
 ```
 pip install -r requirements.txt
 ```
 
-Bước 2: Mở cmd trong thư mục chứa repo, chạy câu lệnh:
+Bước 3: Mở cmd trong thư mục chứa repo, chạy câu lệnh:
 ```
 python load.py
 ```
