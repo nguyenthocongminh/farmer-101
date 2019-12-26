@@ -23,6 +23,10 @@
 	font-size: 23px;
 }
 
+canvas#preview {
+    max-width: 100%;
+}
+
 label[for='image'] {
     text-align: center;
     padding: 65px 30px;
