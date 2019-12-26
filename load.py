@@ -34,13 +34,15 @@ def prepare_image(image):
     image = image.reshape(1, 128, 128, 3) / 255.
 
     return image
-    
-    
+
+
 @app.route('/', methods=['GET'])
 def index():
     return flask.render_template("index.html")
 
+
 LABEL = ['Apple', 'Banana', 'Grape', 'Orange', 'Pineapple']
+
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -57,10 +59,10 @@ def predict():
 
             label_i = result.argmax(axis=-1)[0]
             data['highest_probability'] = [str(LABEL[label_i]), str(result[0, label_i])]
-            
+
             for i in range(5):
                 data['predictions'].append(str(result[0, i]))
-                
+
             data['success'] = True
 
     return flask.jsonify(data)
@@ -68,6 +70,6 @@ def predict():
 
 if __name__ == "__main__":
     print(("* Loading Keras model and Flask starting server..."
-        "please wait until server has fully started"))
+           "please wait until server has fully started"))
     load_model()
     app.run()
