@@ -1,0 +1,24 @@
+.css-clearfix {
+
+}
+.css-clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.css-header {
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.css-loading-img {
+    margin: auto;
+    width: 65px;
+    height: 65px;
+}
+.css-loading-img img {
+    width: 100%;
+}
+#result {
+	font-size: 23px;
+}
