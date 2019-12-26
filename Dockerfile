@@ -2,8 +2,6 @@ FROM tensorflow/tensorflow:2.0.0-py3
 
 WORKDIR /app
 
-COPY . /app
-
 RUN apt-get update && apt-get install -y build-essential \
     cmake \
     git \
@@ -48,6 +46,8 @@ RUN mkdir /tmp/dlib &&\
 #    mkdir build && cd build &&\
     python setup.py install &&\
     cd / && rm -rf /tmp/dlib
+
+COPY . /app
 
 RUN pip install -r /app/requirements.txt --no-cache-dir
 
