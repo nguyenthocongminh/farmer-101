@@ -22,3 +22,18 @@
 #result {
 	font-size: 23px;
 }
+
+label[for='image'] {
+    text-align: center;
+    padding: 65px 30px;
+    width: 100%;
+    background-color: #f1f1f1;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    color: #2ea591;
+    font-size: 18px;
+    font-weight: 700;
+}
