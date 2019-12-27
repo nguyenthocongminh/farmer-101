@@ -2,6 +2,8 @@
 
 Trang web đơn giản để phân loại hoa quả (hiện giờ là 5 loại quả: cam, táo, nho, dứa và chuối).
 
+Live demo: http://thanhpv.dedyn.io:5000
+
 ## Mở đầu
 
 Hướng dẫn để lưu project về máy và chạy trên máy local cho mục đích phát triển và thử nghiệm.
