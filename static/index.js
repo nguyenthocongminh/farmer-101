@@ -14,7 +14,7 @@
     let img = new Image();
 
     file_input.onchange = function (evt) {
-        resultHolder.innerHTML = 'Đang chờ ... ';
+        resultHolder.innerHTML = 'Đưa hình đây để tớ còn đoán nào, nhanh lên!';
 
         let files = evt.target.files; // FileList object
         let file = files[0];
@@ -41,7 +41,7 @@
                 form.submit();
             }
         } else {
-            alert("not an image");
+            alert("Đây có phải là ảnh đâu, mai phen đùa tôi à?");
         }
     };
 
@@ -58,11 +58,11 @@
             success: function (data) {
                 if (data['success']) {
                     let out_result = '<p>' + getMessage(data['highest_probability'][0], data['highest_probability'][1]) + '</p>';
-                    out_result += '<p>( ' + data['highest_probability'][1] + ' )</p>';
+                    out_result += '<p>(' + data['highest_probability'][1] * 100 + '%)</p>';
 
                     resultHolder.innerHTML = out_result;
                 } else {
-                    resultHolder.innerHTML = 'Có lỗi xảy ra, hãy thử lại';
+                    resultHolder.innerHTML = 'Lỗi rồi, thử lại đi!';
                 }
             },
             cache: false,

@@ -7,15 +7,17 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Fruit Detect</title>
+	<title>Người Nông Dân Hiện Đại</title>
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="{{ url_for('static',filename='bootstrap.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}" type="image/x-icon"/>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}" type="image/x-icon"/>
 </head>
 <body>
     <div class="container">
         <div class="css-header css-clearfix border-bottom">
-            <a href="#"><h1 class="text-muted">Fruit Detect</h1></a>
+            <a href="#"><h1 class="text-muted">Người Nông Dân Hiện Đại</h1></a>
         </div>
 
         <div class="card bg-dark text-white mt-5 mb-5">
@@ -23,7 +25,7 @@
                 <form id="predict-form" action = "predict" method = "POST" enctype = "multipart/form-data">
                     <div class="mb-3">
                         <div class="form-group">
-                            <label id="label-img-placeholder" for="image">Đưa ảnh cần nhận diện vào đây</label>
+                            <label id="label-img-placeholder" for="image">Cho tớ xin ảnh nào!</label>
                             <input type="file" class="form-control d-none" name="image" id="image" />
                         </div>
                     </div>
@@ -45,12 +47,12 @@
 
         <div class="card bg-dark text-white mt-5 mb-5">
             <div class="card-body text-center">
-                <div id="result">Đang chờ ... </div>
+                <div id="result">Đưa hình đây để tớ còn đoán nào, nhanh lên!</div>
             </div>
         </div>
 
         <div class="css-footer css-clearfix border-top">
-            <p>&copy; 2019, hihi</p>
+            <p>&copy; 2019, Farmer 101</p>
         </div>
     </div>
 </body>
