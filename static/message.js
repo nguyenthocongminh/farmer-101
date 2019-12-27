@@ -25,24 +25,24 @@ function getMessage(fruit, probability) {
 
     let callback_message = [
         [
-            'Không thể cãi được đây chính là quả ' + fruit_html,
-            'Khá là chắc kèo ' + fruit_html + ' đây rồi',
-            'Chắc chắn là ' + fruit_html + " rồi",
+            'Khá là chắc kèo, ' + fruit_html + ' đây rồi!',
+            'Chắc chắn là ' + fruit_html + ", làm sao mà sai được!",
+            fruit_html + ', tôi đã lừa anh em bao giờ chưa?'
         ],
         [
-            'Có khả năng cao đây là ' + fruit_html,
-            'Tại hạ xin đoán đây là ' + fruit_html,
-            'Có vẻ đây là ' + fruit_html,
+            'Có khả năng cao đây là ' + fruit_html + '...',
+            fruit_html + ', chắc là thế...',
+            'Có vẻ đây là ' + fruit_html + '...',
         ],
         [
             'Hình như đây là ' + fruit_html + ', đúng không?',
             'Có phải ' + fruit_html + ' đây không?',
-            fruit_html + ', có thể nào?',
+            fruit_html + ', phải không ta?',
         ],
         [
-            'Xin lỗi tại hạ không thể khẳng định',
-            'Trong ảnh có gì đó không đúng',
-            'Thí chủ đưa gì cho chúng tôi đây'
+            'Xin lỗi, cái này nằm ngoài khả năng của tôi...',
+            'Hình như có gì đó sai sai...',
+            'Anh em đưa cái gì cho tôi thế này?'
         ]
     ];
 
